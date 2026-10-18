@@ -1,4 +1,16 @@
-basic.showIcon(IconNames.Angry)
+input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # # . .
+        . . # # .
+        . # . . .
+        `)
+})
+basic.showIcon(IconNames.Heart)
 basic.forever(function () {
-    led.plot(2, 3)
+    basic.showString("Hello!")
 })
